@@ -1,0 +1,73 @@
+.inputScreen {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectTip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+label {
+    margin-bottom: 10px;
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(189, 41%, 92%);
+    margin-bottom: 25px;
+    border-radius: 8px;
+    padding: 10px 10px 10px 20px;
+}
+
+input {
+    border: none;
+    width: 96%;
+    height: 100%;
+    border-radius: 8px;
+    padding-right: 15px;
+    background-color: hsl(189, 41%, 92%);
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    text-align: end;
+    font-weight: 700;
+}
+input:placeholder-shown {
+    font-weight: 400;
+}
+input:focus {
+    outline: none;
+}
+
+.billTotalFocus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.numberPeopleFocus {
+    border: 2px solid hsl(29, 70%, 52%);
+}
+
+@media only screen and (min-width: 1440px) {
+    .inputScreen {
+        width: 50%;
+        padding: 20px 30px;
+    }
+
+    .input {
+        margin-bottom: 45px;
+    }
+
+    .selectTip {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 45px;
+    }
+}
