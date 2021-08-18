@@ -2,7 +2,8 @@
     background-color: white;
     border-radius: 40px 40px 0 0;
     width: auto;
-    height: 100%;
+    max-width: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -12,6 +13,7 @@
     .container {
         flex-direction: row;
         height: 550px;
+        max-width: none;
         width: 1050px;
         border-radius: 40px;
         padding: 35px;

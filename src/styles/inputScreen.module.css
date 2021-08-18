@@ -55,6 +55,32 @@ input:focus {
     border: 2px solid hsl(29, 70%, 52%);
 }
 
+/* Custom Input */
+.customInput {
+    width: 100%;
+    padding: 0;
+}
+.customInput::placeholder {
+    text-align: center;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.customInputDiv {
+    border-radius: 8px;
+    background-color: hsl(189, 41%, 92%);
+    padding: 0 10px;
+}
+
+.selectedInput {
+    border:hsl(172, 67%, 45%) solid 3px;
+}
+
+.warningInput {
+    border:hsl(34, 79%, 54%) solid 3px;
+}
+
 @media only screen and (min-width: 1440px) {
     .inputScreen {
         width: 50%;
