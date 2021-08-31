@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/calculatorContainer.module.css";
 import OutputScreen from "./outputScreen";
 import InputScreen from "./inputScreen";
 
 const CalculatorContainer = (props) => (
   <div className={styles.container}>
-    <InputScreen onPeopleChange={props.onPeopleChange} onBillChange={props.onBillChange} onClick={props.onTipClick} bill={props.bill} tip={props.tip} people={props.people}></InputScreen>
-    <OutputScreen onResetClick={props.onResetClick} totalPer={props.totalPer} tipTotalPer={props.tipTotalPer}></OutputScreen>
+    <InputScreen
+      onPeopleChange={props.onPeopleChange}
+      onBillChange={props.onBillChange}
+      onClick={props.onTipClick}
+      bill={props.bill}
+      tip={props.tip}
+      people={props.people}
+      onCustomClick={props.onCustomClick}
+    ></InputScreen>
+    <OutputScreen
+      onResetClick={props.onResetClick}
+      totalPer={props.totalPer}
+      tipTotalPer={props.tipTotalPer}
+    ></OutputScreen>
   </div>
 );
 

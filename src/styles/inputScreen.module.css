@@ -81,6 +81,7 @@ input:focus {
     border:hsl(34, 79%, 54%) solid 3px;
 }
 
+
 @media only screen and (min-width: 1440px) {
     .inputScreen {
         width: 50%;
